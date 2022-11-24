@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root{
+    --heigth-mobile: 65%;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:inherit;
+}
+
+body{
+    box-sizing: inherit;
+    margin: 0;
+    background-color: hsl(212, 45%, 89%);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.content-about-qr{
+    box-sizing: content-box;
+    display: block;
+    max-width: 77%;
+    height: 65.027%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.qr-code{
+    width: 98%;
+    height: 65%;
+    border-radius: 10px;
+}
+
+.text{
+    display: block;
+    height: 28%;
+    text-align: center;
+    padding: 0rem 2.5rem 0rem 2.5rem;
+}
+
+.text-projects{
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+}
+
+.text-scan{
+    color: hsl(220, 15%, 55%);
+    font-weight: 400;
+}   
+
+.attribution { 
+    position: inherit;
+    font-size: 16px; 
+    text-align: center; 
+    padding: 1rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (min-width: 376px) {
+    .content-about-qr{
+        width: 288.750px;;
+        height: 396.203px;
+    }
+    
+}
+
+@media screen and (max-height: 440px) {
+    .content-about-qr{
+        max-width: 77%;
+        height: 65.027%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .qr-code{
+        max-width: 50%;
+    }
+}
